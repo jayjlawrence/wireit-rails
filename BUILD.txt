@@ -1,7 +1,7 @@
 I haven't made this process beautiful but it works 
 
 1 - check out wireit into this directory 
-2 - run the ./maker script to make your new vendor/*/* files
+2 - run the ./build script to make your new vendor/*/* files
 3 - run the ./tester script to create a rails app and test that it works
      n.b. the tester script is for my OS X machine, YMMV
 

@@ -6,7 +6,7 @@ rails generate scaffold tester
 rake db:migrate
 echo 'gem "wireit-rails", :path => "~/Projects/wireit-rails"' >> Gemfile
 bundle install
-echo '//= require yui/utilities/utilities' >> app/assets/javascripts/application.js
+echo '//= require wireit/yui/utilities/utilities' >> app/assets/javascripts/application.js
 echo '//= require wireit/excanvas' >> app/assets/javascripts/application.js
 echo '//= require wireit-min' >> app/assets/javascripts/application.js
 echo '//= require wireit' >> app/assets/stylesheets/application.css
