@@ -1,0 +1,23 @@
+rm -rf vendor/assets/stylesheets/*
+rm -rf vendor/assets/javascripts/*
+mkdir -p vendor/assets/javascripts/wireit vendor/assets/stylesheets/wireit vendor/assets/images/wireit
+
+cp wireit/build/*.js vendor/assets/javascripts
+cp wireit/plugins/inputex/js/TextareaContainer.js vendor/assets/javascripts/wireit/textareacontainer.js
+
+cp wireit/assets/WireIt.css vendor/assets/stylesheets/wireit.css
+cp wireit/plugins/editor/assets/WireItEditor.css vendor/assets/stylesheets/wireiteditor.css
+
+cp wireit/plugins/editor/lib/accordionview/accordionview-min.js vendor/assets/javascripts/wireit
+cp wireit/plugins/editor/lib/accordionview/assets/skins/sam/accordionview.css vendor/assets/stylesheets/wireit
+
+cp wireit/plugins/inputex/lib/inputex/build/inputex-min.css vendor/assets/stylesheets/wireit/
+
+cp wireit/plugins/editor/assets/*png vendor/assets/images/wireit
+
+# Copy YUI CSS and JS 
+ruby build.rb
+# Other needed
+cp wireit/lib/excanvas.js vendor/assets/javascripts/wireit
+
+

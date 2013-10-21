@@ -1,0 +1,17 @@
+#./build
+rm -rf wireit-test
+rails new wireit-test
+cd wireit-test
+rails generate scaffold tester
+rake db:migrate
+echo 'gem "wireit-rails", :path => "~/Projects/wireit-rails"' >> Gemfile
+bundle install
+echo '//= require yui/utilities/utilities' >> app/assets/javascripts/application.js
+echo '//= require wireit/excanvas' >> app/assets/javascripts/application.js
+echo '//= require wireit-min' >> app/assets/javascripts/application.js
+echo '//= require wireit' >> app/assets/stylesheets/application.css
+cp ../tester.html app/views/testers/index.html.erb
+
+(sleep 2; open http://localhost:3000/testers) &
+rails server
+
