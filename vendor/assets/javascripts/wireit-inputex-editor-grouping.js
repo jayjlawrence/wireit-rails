@@ -708,7 +708,9 @@ YAHOO.lang.extend(WireIt.Wire, WireIt.CanvasElement, {
     */
 	getConfig: function() {
       var obj = {
-			xtype: this.xtype
+			xtype: this.xtype,
+      bordercolor: this.bordercolor,
+      color: this.color
 		};
 
 		// Export the label value
@@ -4897,7 +4899,7 @@ YAHOO.lang.extend(WireIt.FormContainer, WireIt.Container, {
     */
    renderForm: function() {
 	
-      var groupParams = {parentEl: this.bodyEl, fields: this.fields, legend: this.legend, collapsible: this.collapsible};
+      var groupParams = {parentEl: this.bodyEl, buttons: this.buttons, fields: this.fields, legend: this.legend, collapsible: this.collapsible};
       this.form = new inputEx.Group(groupParams);
 		  this.form.setContainer(this);
 
@@ -8917,7 +8919,41 @@ WireIt.WiringEditor.adapters = {};
 
 
 })();
-(function() {
+/**
+ * Some utility classes to provide grouping in the WiringEditor
+ * @module grouping-plugin
+ */
+
+
+/**
+ * Add methods to container :
+ */
+
+
+/*setOptions: function() {
+	
+
+this.getGrouper = this.options.getGrouper	
+	
+};
+
+
+onGroupButton: function(e, args) {
+    Event.stopEvent(e);
+
+    this.layer.grouper.toggle(this)
+    //TODO: link somehow to editor's group manager?
+},
+
+addedToGroup: function() {
+    if (YAHOO.lang.isValue(this.ddHandle))
+    this.ddHandle.style.backgroundColor = "green";
+},
+
+ removedFromGroup: function() {
+if (YAHOO.lang.isValue(this.ddHandle))
+    this.ddHandle.style.backgroundColor = "";
+ },*/(function() {
     var util = YAHOO.util,lang = YAHOO.lang;
     var Event = util.Event, Dom = util.Dom, Connect = util.Connect,JSON = lang.JSON,widget = YAHOO.widget;
 

@@ -708,7 +708,9 @@ YAHOO.lang.extend(WireIt.Wire, WireIt.CanvasElement, {
     */
 	getConfig: function() {
       var obj = {
-			xtype: this.xtype
+			xtype: this.xtype,
+      bordercolor: this.bordercolor,
+      color: this.color
 		};
 
 		// Export the label value
@@ -4897,7 +4899,7 @@ YAHOO.lang.extend(WireIt.FormContainer, WireIt.Container, {
     */
    renderForm: function() {
 	
-      var groupParams = {parentEl: this.bodyEl, fields: this.fields, legend: this.legend, collapsible: this.collapsible};
+      var groupParams = {parentEl: this.bodyEl, buttons: this.buttons, fields: this.fields, legend: this.legend, collapsible: this.collapsible};
       this.form = new inputEx.Group(groupParams);
 		  this.form.setContainer(this);
 

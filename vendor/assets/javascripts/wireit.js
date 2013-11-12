@@ -708,7 +708,9 @@ YAHOO.lang.extend(WireIt.Wire, WireIt.CanvasElement, {
     */
 	getConfig: function() {
       var obj = {
-			xtype: this.xtype
+			xtype: this.xtype,
+      bordercolor: this.bordercolor,
+      color: this.color
 		};
 
 		// Export the label value
