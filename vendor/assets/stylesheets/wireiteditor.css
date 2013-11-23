@@ -74,23 +74,23 @@ body {
 }
 
 #WiringEditor-saveButton button {
- background:transparent url(database_save.png) no-repeat scroll 10% 50%;
+ background:transparent url(wireit/database_save.png) no-repeat scroll 10% 50%;
 
 }
 #WiringEditor-deleteButton button {
- background:transparent url(delete.png) no-repeat scroll 10% 50%;
+ background:transparent url(wireit/delete.png) no-repeat scroll 10% 50%;
 }
 
 #WiringEditor-newButton button {
- background:transparent url(add.png) no-repeat scroll 10% 50%;
+ background:transparent url(wireit/add.png) no-repeat scroll 10% 50%;
 }
 
 #WiringEditor-loadButton button {
- background:transparent url(application_go.png) no-repeat scroll 10% 50%;
+ background:transparent url(wireit/application_go.png) no-repeat scroll 10% 50%;
 }
 
 #WiringEditor-helpButton button {
- background:transparent url(help.png) no-repeat scroll 10% 50%;
+ background:transparent url(wireit/help.png) no-repeat scroll 10% 50%;
 }
 
 /**
