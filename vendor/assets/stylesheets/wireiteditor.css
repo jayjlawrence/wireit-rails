@@ -52,7 +52,7 @@ body {
    padding-top: 4px;
 
 	border-bottom: 1px solid #808080;
-	background: transparent url(../../../lib/yui/assets/skins/sam/sprite.png) repeat-x scroll 0 -1300px;
+	background: transparent url(/app_assets/yui/wireit/assets/skins/sam/sprite.png) repeat-x scroll 0 -1300px;
 }
 
 /* Toolbar */
@@ -97,10 +97,9 @@ body {
  * savedStatus
  */
 div.savedStatus {
-	color:orange;
-	font-size:27pt;
-	left:400px;
-	position:absolute;
+	color:red;
+	font-size:18pt;
+	display: inline;
 	/*top:10px;*/
 }
 
